@@ -367,3 +367,18 @@ Live URL:
 
 **Priyanshu Mishra**  
 Backend Engineering Intern Candidate
+
+---
+
+## 🤖 AI Assistance
+
+This project was developed with the assistance of AI tools for:
+
+- Code structuring guidance
+- Architectural discussions (DSU-inspired modeling)
+- Edge-case reasoning
+- Documentation refinement
+
+All core logic, implementation decisions, and understanding of the system were independently designed and implemented by the author.
+
+The use of AI tools reflects familiarity with modern engineering workflows and productivity tools.
