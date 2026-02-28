@@ -1,4 +1,4 @@
-CREATE TABLE Contact (
+CREATE TABLE IF NOT EXISTS Contact (
     id SERIAL PRIMARY KEY,
     email VARCHAR(255),
     phoneNumber VARCHAR(20),
