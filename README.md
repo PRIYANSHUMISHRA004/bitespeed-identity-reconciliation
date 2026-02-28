@@ -157,35 +157,54 @@ For in-memory cluster processing.
 npm install
 ```
 
-### 2️⃣ Setup Database
+---
+
+### 2️⃣ Setup PostgreSQL Database
+
+Open `psql` and run:
 
 ```sql
 CREATE DATABASE bitespeed;
+```
+
+Then connect to the database:
+
+```sql
 \c bitespeed
 ```
 
-Run schema:
+---
+
+### 3️⃣ Run Database Schema
+
+Execute the schema file to create the required tables and indexes:
 
 ```bash
 psql -U postgres -d bitespeed -f schema.sql
 ```
 
-### 3️⃣ Add Environment Variables
+---
 
-Create a `.env` file:
+### 4️⃣ Configure Environment Variables
 
-```
+Create a `.env` file in the root directory:
+
+```env
 DATABASE_URL=postgresql://postgres:your_password@localhost:5432/bitespeed
 ```
 
-### 4️⃣ Run Application
+> ⚠️ If your password contains special characters like `#` or `@`, make sure to URL-encode them (e.g., `#` → `%23`).
+
+---
+
+### 5️⃣ Run the Application
 
 ```bash
 npm run build
 npm start
 ```
 
-Server runs at:
+Server will run at:
 
 ```
 http://localhost:3000
