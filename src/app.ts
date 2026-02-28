@@ -47,7 +47,7 @@ app.post("/identify", async (req, res) => {
 
       return res.json({
         contact: {
-          primaryContatctId: created.id,
+          primaryContactId: created.id,
           emails: created.email ? [created.email] : [],
           phoneNumbers: created.phonenumber ? [created.phonenumber] : [],
           secondaryContactIds: [],
